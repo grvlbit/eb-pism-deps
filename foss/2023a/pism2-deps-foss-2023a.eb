@@ -1,0 +1,29 @@
+easyblock = 'Bundle'
+
+name = 'pism-deps'
+version = '2'
+
+homepage = 'https://pism.io'
+description = """ The Parallel Ice Sheet Model PISM v2.1 is open source and
+capable of high resolution."""
+
+toolchain = {'name': 'foss', 'version': '2023a'}
+
+dependencies = [
+    ('pkgconf', '1.9.5'),
+    ('CMake', '3.26.3'),
+    ('FFTW', '3.3.10'),
+    ('GSL', '2.7'),
+    ('netCDF', '4.9.2'),
+    ('netCDF-C++4', '4.3.1'),
+    ('PETSc', '3.19.2'),
+    ('UDUNITS', '2.2.28'),
+    ('PROJ', '9.2.0'),
+    ('PnetCDF', '1.12.3'),
+    ('ParallelIO', '2.5.10'),
+    ('Python', '3.11.3'),
+    ('netcdf4-python', '1.6.4'),
+    ('matplotlib', '3.7.2'),
+]
+
+moduleclass = 'geo'
